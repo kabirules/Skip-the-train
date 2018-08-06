@@ -57,6 +57,7 @@ public class CharController : MonoBehaviour
 					this.gameObject.transform.position.x - (2.7f / maxLeftCycles),
 					this.gameObject.transform.position.y,
 					this.gameObject.transform.position.z));
+				mainCamera.SendMessage("AdjustCamera", -(2.7f / maxLeftCycles));
 				left++;
 			
 		}
@@ -67,16 +68,17 @@ public class CharController : MonoBehaviour
 					this.gameObject.transform.position.x + (2.7f / maxRightCycles),
 					this.gameObject.transform.position.y,
 					this.gameObject.transform.position.z));
+				mainCamera.SendMessage("AdjustCamera", (2.7f / maxRightCycles));
 				right++;
 		}
-/*
-		void OnCollisionColliderEnter (Collision collision) {
-			if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Ground")) 
-			{
-				grounded = true;
-				this.GetComponent<Animator>().speed = 1;
-			}
-		}
-*/
 	}
+
+	void OnCollisionEnter (Collision collision) 
+	{
+		if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Ground")) 
+		{
+			grounded = true;
+			this.GetComponent<Animator>().speed = 1;
+		}
+	}	
 }
