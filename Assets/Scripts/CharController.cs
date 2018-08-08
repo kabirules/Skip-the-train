@@ -35,8 +35,23 @@ public class CharController : MonoBehaviour
 		if (Input.GetKeyUp(KeyCode.Space) && grounded)
 		{
 			jump = 0;
-		}				
+		}
+
+		ActivateCarsInRange();
 	}
+
+	private void ActivateCarsInRange() 
+	{
+		Collider[] colliders = Physics.OverlapSphere(this.gameObject.transform.position, 50f);
+		foreach(Collider c in colliders) 
+		{
+			if (c.gameObject.GetComponent<CarController>() != null)
+			{
+				c.gameObject.GetComponent<CarController>().SignalToMove();
+			}
+		}
+	}
+
 	void FixedUpdate () 
 	{
 		if (alive)
