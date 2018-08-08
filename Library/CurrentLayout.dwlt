@@ -110,7 +110,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 78
+  controlID: 65
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -179,8 +179,8 @@ MonoBehaviour:
     y: 412
     width: 819
     height: 546
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -228,8 +228,8 @@ MonoBehaviour:
     y: 0
     width: 536
     height: 412
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -387,14 +387,14 @@ MonoBehaviour:
     height: 391
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 0
-  lastFramingTime: 3011.4482977164757
+  lastFramingTime: 3633.436061250646
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -5.2126427, y: 0.64235306, z: 0.54807997}
+    m_Target: {x: -0.07610345, y: 0.45999908, z: 71.103134}
     speed: 2
-    m_Value: {x: -5.2126427, y: 0.64235306, z: 0.54807997}
+    m_Value: {x: -0.07610345, y: 0.45999908, z: 71.103134}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -410,25 +410,25 @@ MonoBehaviour:
     showParticleSystems: 1
   grid:
     xGrid:
-      m_Target: 1
-      speed: 2
-      m_Value: 1
-    yGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
+    yGrid:
+      m_Target: 1
+      speed: 2
+      m_Value: 1
     zGrid:
       m_Target: 0
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    m_Target: {x: 0.35674554, y: 0.13744059, z: -0.053150143, w: 0.9225066}
     speed: 2
-    m_Value: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
+    m_Value: {x: 0.35674545, y: 0.13744056, z: -0.053150132, w: 0.92250633}
   m_Size:
-    m_Target: 4.6564703
+    m_Target: 107.94759
     speed: 2
-    m_Value: 4.6564703
+    m_Value: 107.94759
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -543,8 +543,8 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
+    m_SelectedIDs: baf8feff
+    m_LastClickedID: -67398
     m_ExpandedIDs: f0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -606,19 +606,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Standard Assets/Vehicles/Car/Materials
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Standard Assets/Vehicles/Car/Materials
+  - Assets/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: E:\Disco F\Unity\Skip the train
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: d02e0000
-    m_LastClickedID: 11984
+    m_SelectedIDs: e22b0000
+    m_LastClickedID: 11234
     m_ExpandedIDs: 00000000a0290000dc2b0000a22e0000c82e0000122f00006a2f0000ba2f00002c30000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -674,7 +674,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: f41b00005046fdff0c260000f2b0fcffb2280000d81c000044f5ffff2ef2ffff64edfffffac5ffff08c1ffff4cbeffff481d0000fc0500001e060000802100002c3c00006c1c000046050000522d00003e390000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
