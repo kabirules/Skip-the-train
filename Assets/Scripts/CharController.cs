@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharController : MonoBehaviour 
 {
@@ -38,6 +39,8 @@ public class CharController : MonoBehaviour
 		}
 
 		ActivateCarsInRange();
+
+		CheckIfDied();
 	}
 
 	private void ActivateCarsInRange() 
@@ -88,8 +91,26 @@ public class CharController : MonoBehaviour
 		}
 	}
 
+	void CheckIfDied() 
+	{
+		if (this.gameObject.transform.position.y < - 5)
+		{
+			// Application.LoadLevel(0);
+			SceneManager.LoadScene(0);
+		}
+	}
+
 	void OnCollisionEnter (Collision collision) 
 	{
+		if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Obstacle")) 
+		{
+			alive = false;
+			this.GetComponent<Animator>().speed = 0;
+			mainCamera.GetComponent<CameraController>().DetachCamera();
+			this.GetComponent<Rigidbody>().velocity = new Vector3(0,0,0);
+			this.GetComponent<Rigidbody>().AddForce(-500f, 1500f, -1000f);
+		}	
+
 		if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Ground")) 
 		{
 			grounded = true;
